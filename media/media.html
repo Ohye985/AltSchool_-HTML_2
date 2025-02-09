@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>HTML MEDIA ELEMENTS</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#audio">< audio ></a>
+                </li>
+                <li>
+                    <a href="#video">< video ></a>
+                </li>
+                <li>
+                    <a href="#iframe">< iframe ></a>
+                </li>
+                <li>
+                    <a href="#embed">< embed ></a>
+                </li>
+                <li>
+                    <a href="#source">< source ></a>
+                </li>
+                <li>
+                    <a href="#track">< track ></a>
+                </li>
+                <li>
+                    <a href="#picture">< picture ></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="audio">
+            <h2><em>Audio element</em></h1>
+            <audio src="../assets/audio/Darey-Not-The-Girl-(TrendyBeatz.com).mp3" controls></audio>
+        </section>
+        <section id="video">
+            <h2><em>Video element</em></h2>
+            <video src="../assets/video/Luck - _Lucky Star_ (dance scene).mp4" controls></video>
+        </section>
+        <section id="iframe">
+            <h2><em>iFrame element</em></h2>
+            <iframe src="https://www.youtube.com/embed/hoU3BY33yaM?si=OTzGsn8pDyYYC2xS" frameborder="0" title="From Intern to Engineering Lead"></iframe>
+        </section>
+        <section id="embed">
+            <h2><em>Embed element</em></h2>
+            <embed src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGpiNDdkdzYxeGQ3N3lzZjM2bDk2eDQ1dnpudDVsbDN2NDgwYXc2YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ws6T5PN7wHv3cY8xy8/giphy.gif" type="image/gif" width="400px" height="250px">
+        </section>
+        <section id="source">
+            <h2><em>Source element</em></h2>
+            <video controls>
+                <source src="../assets/video/Luck - _Lucky Star_ (dance scene).mp4">
+            </video>
+        </section>
+        <section id="track">
+            <h2><em>Track element</em></h2>
+            <video controls>
+                <source src="../assets/video/Luck - _Lucky Star_ (dance scene).mp4">
+                <track kind="subtitles" src="./assets/subtitle/Luck - _Lucky Star_ (dance scene) [DownSub.com].vtt" srclang="en" label="English">
+            </video>
+        </section>
+        <section id="picture">
+            <h2><em>Picture element</em></h2>
+            <picture>
+                <source srcset="../assets/images/1.jpg" media="(max-width: 600px)">
+                <source srcset="../assets/images/2.jpg" media="(max-width: 900px)">
+                <source srcset="../assets/images/3.jpg" media="(max-width: 1200px)">
+                <img src="../assets/images/4.jpg" width="300vw">
+            </picture>
+            
+        </section>
+    </main>
+</body>
+</html>
